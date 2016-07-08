@@ -141,15 +141,12 @@ function splitgroup_civicrm_preProcess($formName, &$form) {
  * Implements hook_civicrm_navigationMenu().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_navigationMenu
- *
+ */
 function splitgroup_civicrm_navigationMenu(&$menu) {
-  _splitgroup_civix_insert_navigation_menu($menu, NULL, array(
-    'label' => ts('The Page', array('domain' => 'uk.org.futurefirst.networks.splitgroup')),
-    'name' => 'the_page',
-    'url' => 'civicrm/the-page',
-    'permission' => 'access CiviReport,access CiviContribute',
-    'operator' => 'OR',
-    'separator' => 0,
+  _splitgroup_civix_insert_navigation_menu($menu, 'Contacts', array(
+    'name'       => ts('Split Group'),
+    'url'        => 'civicrm/group/split',
+    'permission' => 'access CiviCRM,edit groups',
   ));
   _splitgroup_civix_navigationMenu($menu);
-} // */
+}

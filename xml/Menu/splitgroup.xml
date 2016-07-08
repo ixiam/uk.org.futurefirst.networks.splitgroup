@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/group/split</path>
+    <page_callback>CRM_Splitgroup_Form_GroupSplit</page_callback>
+    <title>Split Group</title>
+    <access_arguments>access CiviCRM,edit groups</access_arguments>
+  </item>
+</menu>
