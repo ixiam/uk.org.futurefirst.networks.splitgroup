@@ -1,0 +1,17 @@
+
+# Created by https://www.gitignore.io/api/joe,netbeans
+
+### Joe ###
+# File backups
+*~
+# Gets created when joe crashes
+DEADJOE
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+.nb-gradle/
