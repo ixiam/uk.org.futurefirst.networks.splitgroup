@@ -51,8 +51,10 @@ function civicrm_api3_group_split($params) {
   $chunks  = array_chunk($members, $params['size']);
   // group_type is returned in a different format to how it is passed
   $group_type = array();
-  foreach ($group['group_type'] as $gtid) {
-    $group_type[$gtid] = 1;
+  if (isset($group['group_type']) && is_array($group['group_type'])) {
+    foreach ($group['group_type'] as $gtid) {
+      $group_type[$gtid] = 1;
+    }   
   }
 
   $returnValues = array();
