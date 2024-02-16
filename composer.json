@@ -1,0 +1,5 @@
+{
+    "name": "civicrm/splitgroup",
+    "type": "civicrm-ext",
+    "description": "Split Group"
+}
